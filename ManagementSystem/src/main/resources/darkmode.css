@@ -1,0 +1,167 @@
+.root {
+    -fx-background-color: #3f3f3f;
+    -fx-text-fill: #ffffff;
+}
+
+.button {
+    -fx-background-color: #ffffff;
+}
+.ProductText{
+    -fx-font-family: "Calibri";
+    -fx-font-size: 17px; /* Adjust as needed */
+    -fx-text-fill: #ffffff;
+}
+.MenuText{
+    -fx-font-size: 25px;
+    -fx-transition: all 0.3s ease;
+}
+.MenuText:hover {
+    -fx-effect: dropshadow(gaussian, rgb(252, 252, 252), 3, 0.5, 0, 0);
+    -fx-font-size: 27px;
+}
+
+GridPane {
+    -fx-background-color: #3f3f3f;
+}
+
+ScrollPane {
+    -fx-background-color: #3f3f3f;
+}
+
+.table-view {
+    -fx-background-color: #3f3f3f;
+
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffff;
+}
+
+/* Styling the TableView header */
+.table-view .column-header {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #8eb79b; /* Header background color */
+// -fx-border-color: #444444;     /* Header border color */
+    -fx-font-size: 20px;           /* Header font size */
+    -fx-font-weight: bold;         /* Header font weight */
+
+}
+.table-view .column-header .label {
+    -fx-min-width: 100px;  /* Minimum width of columns */
+    -fx-pref-width: 300px; /* Preferred width of columns */
+    -fx-max-width: 400px;  /* Maximum width of columns */
+}
+
+/* Styling individual table rows */
+.table-view .table-row-cell {
+    -fx-background-color: #545454; /* Default row background color */
+    -fx-border-color: #dddddd;     /* Border between rows */
+}
+.table-view .table-row-cell:hover {
+    -fx-background-color: #ccffd6; /* Background color when hovering */
+}
+
+/* Selected row styling */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #ccffd6; /* Background for selected rows */
+    -fx-text-fill: #ffffff;        /* Text color for selected rows */
+}
+
+
+.table-view .table-cell {
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 15px;
+    -fx-text-fill: #ffffff;
+}
+
+
+.table-view .table-cell:focused {
+// -fx-border-color: #ff9900;
+}
+
+
+.table-view .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #cccccc;
+    -fx-border-radius: 5px;
+}
+
+
+.text-field {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+.text-field:focused {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.grid{
+    -fx-background-color: #3f3f3f;
+}
+.combo-box {
+    -fx-background-color: #f0f0f0;
+    //-fx-border-color: #333;
+    -fx-border-radius: 5px;       /* Rounded corners */
+    -fx-padding: 5px;             /* Inner padding */
+    -fx-font-family: "Arial";     /* Font family */
+    -fx-font-size: 14px;          /* Font size */
+    -fx-text-fill: #555;          /* Text color */
+}
+
+/* Styling the ComboBox dropdown list */
+.combo-box .list-view {
+    -fx-background-color: #ffffff; /* Background of the dropdown */
+    -fx-border-color: #333;        /* Border color of the dropdown */
+    -fx-control-inner-background: #e6e6e6; /* Inner background */
+    -fx-font-size: 14px;           /* Font size for dropdown items */
+    -fx-text-fill: #333;           /* Text color of items */
+}
+
+/* Styling when hovering over dropdown items */
+.combo-box .list-cell:hover {
+    -fx-background-color: #cce7ff; /* Background color on hover */
+    -fx-text-fill: #000;           /* Text color on hover */
+}
+
+/* Styling the ComboBox arrow */
+.combo-box .arrow {
+    -fx-background-color: #999; /* Arrow color */
+}
+.radio {
+    -fx-font-size: 16px;
+    -fx-text-fill: #ffffff;
+}
+
+/* Style the radio button's circle */
+.radio .radio-button {
+    -fx-background-color: transparent;
+    -fx-border-color: #888;
+    -fx-border-width: 2px;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+}
+
+/* Style the radio button when selected */
+.radio .radio-button:selected {
+    -fx-background-color: #4CAF50;
+    -fx-border-color: #4CAF50;
+}
+
+/* Style when hovering over the radio button */
+.radio .radio-button:hover {
+    -fx-border-color: #1a73e8;
+}
+
+/* Style the label next to the radio button */
+.radio .text {
+    -fx-font-weight: bold;
+}
